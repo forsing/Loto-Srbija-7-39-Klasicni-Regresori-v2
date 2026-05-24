@@ -122,8 +122,8 @@ random.seed(SEED)
 # ============================================================
 # Konfiguracija
 # ============================================================
-CSV_PATH        = "/Users/4c/Desktop/GHQ/KvantniRegresor/loto7_4620_k41.csv"
-OUT_TXT         = "/Users/4c/Desktop/GHQ/KvantniRegresor/KlasicniRegresori_v2_predikcija.txt"
+CSV_PATH        = "/KvantniRegresor/loto7_4620_k41.csv"
+OUT_TXT         = "/KvantniRegresor/KlasicniRegresori_v2_predikcija.txt"
 N_MIN, N_MAX    = 1, 39
 K               = 7
 LAG             = 5
@@ -507,15 +507,15 @@ print()
    (slučajan baseline ≈ 1.256 hits/7)
 
 🎯 Predikcija SLEDEĆEG kola (po modelu):
-   DTR   -> [6, 19, 23, 24, 26, 30, 37]
-   KNN   -> [5, 10, 13, 23, 29, 30, 36]
-   RFR   -> [7, 8, 15, 23, 27, 32, 38]
-   LR    -> [7, 13, 19, 23, 25, 32, 37]
-   GBR   -> [9, 15, 21, 23, 25, 28, 35]
-   XGB   -> [13, 18, 21, 23, 27, 28, 30]
+   DTR   -> [6, x, 23, y, 26, z, 37]
+   KNN   -> [5, x, 13, y, 29, z, 36]
+   RFR   -> [7, x, 15, y, 27, z, 38]
+   LR    -> [7, x, 19, y, 25, z, 37]
+   GBR   -> [9, x, 21, y, 25, z, 35]
+   XGB   -> [13, x, 21, y, 27, z, 30]
 
-🏁 ANSAMBL (prosek skorova): [7, 13, 23, 25, 30, 32, 35]
-🏁 STACKING (meta-Ridge)  : [5, 10, 13, 18, 23, 30, 36]
+🏁 ANSAMBL (prosek skorova): [7, x, 23, y, 30, z, 35]
+🏁 STACKING (meta-Ridge)  : [5, x, 13, y, 23, z, 36]
 
 ✅ ANSAMBL validan (suma=165, neparnih=5/7, niskih(≤19)=2/7, raspon=28).
 ✅ STACKING validan (suma=135, neparnih=3/7, niskih(≤19)=4/7, raspon=31).
